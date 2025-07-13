@@ -619,6 +619,10 @@ main > *, #inputText, .showing > *, .answerDiv > div > div:not(.abnoName), .answ
     flex-wrap: wrap;
 }
 
+#tutorialText>p {
+    text-align: center
+}
+
 #tutorialText>div:not(#tutorialTextColors){
     row-gap: 6px;
     column-gap: 12px
@@ -888,5 +892,9 @@ main > *, #inputText, .showing > *, .answerDiv > div > div:not(.abnoName), .answ
         width: 20px;
         height: 20px;
         margin: 3px;
+    }
+
+    #tutorialText > p {
+        max-width: 90%
     }
 }
