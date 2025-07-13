@@ -111,7 +111,7 @@ function setGameUp() {
     hideAnswerOptions();
     createOptions();
     setAttemptCounter();
-    document.getElementById("postWinStatusTitle").innerHTML = `Today's abnormality was <img src="imgs/portraits/Nothing_There.png"> ${correctAnswer.name}`
+    document.getElementById("postWinStatusTitle").innerHTML = `Today's abnormality was <img src="imgs/portraits/${getCleanPortaitPath(correctAnswer.name)}.png"> ${correctAnswer.name}`
     writeTutorial();
 
     /*
