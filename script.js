@@ -62,9 +62,11 @@ else {
 
 setBGAnimation();
 
-if (localStorage.getItem(formatedDate) != null && false) {
-    console.log("dateExists")
-    console.log(localStorage.getItem(formatedDate))
+//console.log(formatedDate)
+
+if (localStorage.getItem(formatedDate) != null) {
+    //console.log("dateExists")
+    //console.log(localStorage.getItem(formatedDate))
     let answerString = localStorage.getItem(formatedDate)
     let previousAnswers = []
     while (answerString.includes(",")) {
@@ -74,7 +76,7 @@ if (localStorage.getItem(formatedDate) != null && false) {
         answerString = answerString.substring(answerString.indexOf(",")+1)
     }
     previousAnswers.push(answerString)
-    console.log(previousAnswers)
+    //console.log(previousAnswers)
     previousAnswers.forEach(answer => {
         inputText.value = answer
         verifyWrittenAnswer()
@@ -83,7 +85,7 @@ if (localStorage.getItem(formatedDate) != null && false) {
 
 }
 else {
-    console.log("there is no date")
+    //console.log("there is no date")
 }
 
 
@@ -241,7 +243,7 @@ function generateSeedTroughDay(targetDay) {
     }
 
     const seed = finalNumber;
-    console.log(`${ day } ${ month } ${ year } | ${abnos[seed].name}`)
+    //console.log(`${ day } ${ month } ${ year } | ${abnos[seed].name}`)
 
     return (seed);
 
@@ -431,7 +433,7 @@ function createAllAnswerAttempts() {
 } 
 
 function createOptions() {
-    console.log("called")
+    //console.log("called")
     let tempNameArray = [];
     for (let i = 0; i < abnos.length; i++) {
         tempNameArray.push(abnos[i].name);
