@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abnordle</title>
+    <meta name="author" content="Yguana">
+    <meta name="description" content="A Project Moon monster-guessing game.">
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="imgs/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="setGameUp()">
+    <div id="trueBackground"></div>
+    <aside>
+        <div><input type="checkbox" id="cbxBackgroundAnim" onclick="toggleBackground()"> <p> Animated Background</p></div>
+        <p id="tutorialOpenButton" onclick="toggleTutorial(true)"><u>Open Help / Info</u></p>
+    </aside>
+    <div id="mistakePopup" class="mistakePopupHidden"> <img src="imgs/mistake.png"><p id="mistakeText">test test test</p></div>
+    <div id="tutorialHolder" class="tutorialClosed">
+        <div id="tutorialText"></div>
+        <div id="tutorialCloseButton" onclick="toggleTutorial(false)"><u>Close Help / Info tab</u></div>
+    </div>
+    <main>
+        <div id="inputHolder" class="inputHolderActive">
+            <div id="answerIndicator">
+            <img src="imgs/win_emotes/lost.png" class="winEmote">
+            <p id="answerIndicatorText"> Type the name of an abnormality:</p>
+            <img src="imgs/win_emotes/lost.png" class="winEmote">
+        </div>
+        <div id="attemptCounter"></div>
+        <div id="inputRow">
+            <input type="text" autocomplete="off" id="inputText" onfocus="showAnswerOptions()" onblur="hideAnswerOptionsDelayed()" oninput="filterOptions()">
+            <ul id="options"></ul>
+        </div>
+        <input type="button" value="==>" id="inputButton" onclick="verifyWrittenAnswer()">
+
+        </div>
+        <div class="postWinStatusHide" id="postWinStatus">
+            <p id="postWinStatusTitle"></p>
+            <div id="timerHolder">
+                <div>Time until next abnormality (you will need to refresh the page)</div>
+                <div id="timeDisplay"></div>
+            </div>
+            <div id="emojiPasteDiv" onclick="copyResultClick()"></div>
+            <p>(Copy your game in text form)</p>
+        </div>
+        <div id="answerHolder">
+        </div>
+    </main>
+
+
+</body>
+</html>
