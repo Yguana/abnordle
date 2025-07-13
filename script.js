@@ -734,7 +734,7 @@ function setAttemptCounter() {
 
 function getDailyResult() {
     
-    let myDate = `${writtenMonths[unformatedDate.getMonth()]} ${unformatedDate.getDay()}, ${unformatedDate.getFullYear()}`
+    let myDate = `${writtenMonths[unformatedDate.getMonth()]} ${unformatedDate.getDate()}, ${unformatedDate.getFullYear()}`
 
     let finalEmojiString = `Abnordle - ${myDate} <br><br>`
     answersEmojiForPastes.forEach(answer => {
