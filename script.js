@@ -174,7 +174,7 @@ function writeTutorial() {
     tutorialText.appendChild(createDivWithArrayDisplay(realRisks));
 
     const colorTitle = document.createElement("p");
-    colorTitle.innerHTML = "All color options:";
+    colorTitle.innerHTML = "All color options (Abnormalities can have more than one):";
     tutorialText.appendChild(colorTitle);
     const colorTutorialDiv = document.createElement("div");
     colorTutorialDiv.id = "tutorialTextColors"
@@ -192,12 +192,12 @@ function writeTutorial() {
     tutorialText.appendChild(createDivWithArrayDisplay(realBehave));
 
     const damageTitle = document.createElement("p");
-    damageTitle.innerHTML = "All damage type options:";
+    damageTitle.innerHTML = "All damage type options (Abnormalities can have more than one):";
     tutorialText.appendChild(damageTitle);
     tutorialText.appendChild(createDivWithArrayDisplay(realDamage));
 
     const rangesTitle = document.createElement("p");
-    rangesTitle.innerHTML = "All attack method options:";
+    rangesTitle.innerHTML = "All attack method options (Abnormalities can have more than one):";
     tutorialText.appendChild(rangesTitle);
     tutorialText.appendChild(createDivWithArrayDisplay(realRanges));
 }
