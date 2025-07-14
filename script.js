@@ -64,7 +64,7 @@ setBGAnimation();
 
 //console.log(formatedDate)
 
-if (localStorage.getItem(formatedDate) != null) {
+if (localStorage.getItem(formatedDate) != null && debug == false) {
     //console.log("dateExists")
     //console.log(localStorage.getItem(formatedDate))
     let answerString = localStorage.getItem(formatedDate)
@@ -606,7 +606,9 @@ function addAnswerAttempt(abno) {
 
 
     answersList.push(abno.name.toLowerCase());
-    localStorage.setItem(formatedDate, answersList)
+    if (debug == false) {
+        localStorage.setItem(formatedDate, answersList)
+    }
     showAnswerAttempt(currentDiv);
     if (abno == correctAnswer && debug == false) {
         newEmojiEntry.unshift("&#129001")

@@ -130,8 +130,8 @@ window.abnos = [
         "danger" : "HE",
         "colors" : ["Red","White","Yellow"],
         "behaviour" : "Aggressive",
-        "damage" : ["Physical"],
-        "range" : ["Melee"]
+        "damage" : ["Physical","Mental"],
+        "range" : ["Melee","Ranged"]
     },
 
     {
@@ -193,7 +193,7 @@ window.abnos = [
         "danger": "HE",
         "colors": ["Black", "Gray", "Red", "Green"  ],
         "behaviour": "Neutral",
-        "damage": ["Physical"],
+        "damage": ["Physical","Mental"],
         "range": ["Melee"]
     },
 
@@ -382,7 +382,7 @@ window.abnos = [
         "danger": "HE",
         "colors": ["Black", "White"],
         "behaviour": "Neutral",
-        "damage": ["Physical","Mental"],
+        "damage": ["Mental"],
         "range": ["Ranged","Magic"]
     },
 
