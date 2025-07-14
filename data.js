@@ -498,7 +498,7 @@ window.abnos = [
         "name": "Fairy Festival",
         "danger": "ZAYIN",
         "colors": ["Turquoise", "White", "Beige", "Red"],
-        "behaviour": "Neutral",
+        "behaviour": "Aggressive",
         "damage": ["Physical"],
         "range": ["Melee"]
     },
@@ -554,7 +554,7 @@ window.abnos = [
         "colors": ["Red", "Black"],
         "behaviour": "Aggressive",
         "damage": ["Physical","Mental"],
-        "range": ["Melee","Ranged"]
+        "range": ["Melee","Ranged","Proxy"]
     },
 
     {
@@ -661,7 +661,7 @@ window.abnos = [
         "colors": ["Black", "Orange","Yellow","Red"],
         "behaviour": "Neutral",
         "damage": ["Physical","Mental"],
-        "range": ["Melee"]
+        "range": ["Melee","Magic"]
     },
 
     {
@@ -688,7 +688,7 @@ window.abnos = [
         "colors": ["Black", "Orange", "Brown", "Red"],
         "behaviour": "Neutral",
         "damage": ["Physical","Mental"],
-        "range": ["Ranged","Melee"]
+        "range": ["Ranged", "Melee", "Magic"]
     },
 
     {
@@ -697,7 +697,7 @@ window.abnos = [
         "colors": ["White", "Cyan"],
         "behaviour": "Neutral",
         "damage": ["Mental"],
-        "range": ["Ranged","Melee"]
+        "range": ["Ranged","Melee","Magic"]
     },
 
     {
@@ -721,7 +721,7 @@ window.abnos = [
     {
         "name": "Ppodae",
         "danger": "TETH",
-        "colors": ["White", "Black", "Blue"],
+        "colors": ["White", "Black", "Blue","Brown","Magenta"],
         "behaviour": "Aggressive",
         "damage": ["Physical"],
         "range": ["Melee"]
@@ -760,7 +760,7 @@ window.abnos = [
         "colors": ["White", "Gray", "Pink", "Black", "Magenta"],
         "behaviour": "Neutral",
         "damage": ["Physical", "Mental"],
-        "range": ["Melee", "Magic"]
+        "range": ["Melee", "Magic","Ranged","Proxy"]
     },
 
 

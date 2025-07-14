@@ -197,7 +197,7 @@ function writeTutorial() {
     tutorialText.appendChild(createDivWithArrayDisplay(realDamage));
 
     const rangesTitle = document.createElement("p");
-    rangesTitle.innerHTML = "All attack method options (Abnormalities can have more than one):";
+    rangesTitle.innerHTML = "All attack/action method options (Abnormalities can have more than one):";
     tutorialText.appendChild(rangesTitle);
     tutorialText.appendChild(createDivWithArrayDisplay(realRanges));
 }
@@ -581,7 +581,7 @@ function addAnswerAttempt(abno) {
 
     let div6 = document.createElement("div"); //range 
     
-    div6.innerText = "Attack Method";
+    div6.innerText = "Attack/Actions";
     div6.classList.add("answerDivProperty");
 
     let rangeDiv = document.createElement("div");
